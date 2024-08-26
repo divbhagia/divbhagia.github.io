@@ -1,0 +1,115 @@
+```{=html}
+<ul>
+    <% for (const item of items) { %>
+      <li>
+
+        <!-- Title -->
+        <paper-title><%= item.title %></paper-title>
+        
+        <!-- Coauthor Names -->
+        <% if (Array.isArray(item.coauthors) && item.coauthors.length) { %>
+          <% if (item.coauthors.length === 1) { %>
+            with 
+            <% if (Array.isArray(item.coauthorLinks) && item.coauthorLinks[0] && item.coauthorLinks[0] !== '') { %>
+              <a href="<%= item.coauthorLinks[0] %>"><%= item.coauthors[0] %></a>
+            <% } else { %>
+              <%= item.coauthors[0] %>
+            <% } %>
+          <% } else { %>
+            with 
+            <% item.coauthors.forEach((author, index) => { %>
+              <% if (Array.isArray(item.coauthorLinks) && item.coauthorLinks[index] && item.coauthorLinks[index] !== '') { %>
+                <a href="<%= item.coauthorLinks[index] %>"><%= author %></a>
+              <% } else { %>
+                <%= author%>
+              <%}%>
+              <% if (index < item.coauthors.length - 2) {%>,  
+              <% } else if (index === item.coauthors.length - 2) { %>
+                <%= item.coauthors.length > 2 ? ' and ' : ' and ' %>
+              <% } %>
+            <% }); %>
+          <% } %>
+        <% } %>
+
+        <!-- Journal Name and Date -->
+        <% if (item.journalName || item.year) { %>
+          <% if (item.journalName) { %>,  <em><%=item.journalName%></em>
+          <% } %>
+          <% if (item.year) { %>,  <%= item.year %>
+          <% } %>
+        <% } %>
+
+        <!-- Status -->
+        <% if (item.status) { %>
+          ,  <em><%= item.status %></em> 
+        <% } %>
+
+        <!-- Other text -->
+        <% if (item.otherText) { %>
+          ,  <%= item.otherText %>
+        <% } %>
+
+        <!-- Add break -->
+        <br>
+
+        <!-- Preprint Link -->
+        <% if (item.preprintLink && item.preprintLink !== '') { %>
+        <div class="link-box">
+            <a href="<%= item.preprintLink %>">Preprint</a>
+        </div>
+        <% } %>
+
+        <!-- Published Version -->
+        <% if (item.publishedLink && item.publishedLink !== '') { %>
+        <div class="link-box">
+            <a href="<%= item.publishedLink %>">Published Version</a>
+        </div>
+        <% } %>
+
+        <!-- Current Draft -->
+        <% if (item.draft && item.draft !== '') { %>
+        <div class="link-box">
+            <a href="<%= item.draft %>" target="_blank">Current Draft</a>
+        </div>
+        <% } %>
+
+        <!-- arXiv Link -->
+        <% if (item.arxiv && item.arxiv !== '') { %>
+        <div class="link-box">
+            <a href="<%= item.arxiv %>">arXiv</a>
+        </div>
+        <% } %>
+
+        <!-- Data & Code -->
+        <% if (item.replpack && item.replpack !== '') { %>
+        <div class="link-box">
+            <a href="<%= item.replpack %>">Data & Code</a>
+        </div>
+        <% } %>
+
+        <!-- Abstract Button and Text Section -->
+        <% if (item.abstract && item.abstract !== '') { %>
+        <button class="link-box" onclick="toggleAbstract('<%= item.id %>')"> Abstract<button>
+        <div id="abstract-<%= item.id %>" class="abstract-text" style="display: none;">
+            <%= item.abstract %>
+        </div>
+        <% } %>
+
+        <!-- Add break -->
+        <!-- <br><br> -->
+
+      </li>
+    <% } %>
+  </ul>
+  ```
+
+<script>
+function toggleAbstract(id) {
+    var abstractDiv = document.getElementById('abstract-' + id);
+    if (abstractDiv.style.display === 'none') {
+        abstractDiv.style.display = 'block';
+    } else {
+        abstractDiv.style.display = 'none';
+    }
+}
+</script>

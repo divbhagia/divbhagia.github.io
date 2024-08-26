@@ -1,0 +1,29 @@
+---
+title: "Div Bhagia"
+subtitle: "Assistant Professor of Economics, California State University, Fullerton"
+image: assets/headshot.png 
+toc: false 
+about: 
+  template: jolla 
+  image-shape: round
+  image-width: 30%
+  links:
+    - icon: google
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=g6QJCFkAAAAJ
+    - icon: github
+      text: GitHub
+      href: https://github.com/divbhagia
+    - icon: twitter
+      text: Twitter
+      href: https://x.com/BhagiaDiv
+format:
+  html:
+    link-external-newwindow: true
+---
+
+I am an Assistant Professor of Economics at the College of Business and Economics, California State University, Fullerton. I received my Ph.D. in Economics from Boston College in 2022.
+
+My research interests include labor economics, applied econometrics, and economic geography. You can find links to my published and working papers on the research page. Additionally, links to all the materials from the classes I teach at CSUF are available on the teaching page.
+
+You can reach me at [dbhagia17@gmail.com](mailto:dbhagia17@gmail.com). I use they/them pronouns.

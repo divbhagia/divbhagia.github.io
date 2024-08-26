@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - assets
+    - papers
+  render: 
+    - "*.qmd"
+
+execute:
+  freeze: auto
+
+website:
+  title: "Div Bhagia"
+  navbar:
+    background: primary
+    foreground: secondary
+    right:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: cv.qmd
+        text: CV
+      - href: teaching.qmd
+        text: Teaching
+    search: false
+    pinned: true
+
+format:
+  html:
+    self-contained: true
+    theme: [assets/custom.scss]
+    toc: true
+    link-external-newwindow: false
+
+
+

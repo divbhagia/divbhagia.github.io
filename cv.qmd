@@ -1,0 +1,9 @@
+---
+title: "CV"
+embed-resources: true
+---
+
+Click <a href="assets/bhagia_CV.pdf" target="_blank"> here </a> to open my CV in a new tab or <a href="assets/bhagia_CV.pdf" download="assets/bhagia_CV.pdf">download</a> it.
+
+<object class="pdfembed" data="assets/bhagia_CV.pdf" type="application/pdf" style="width:100%; height:600px;">
+</object>

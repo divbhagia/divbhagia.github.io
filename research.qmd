@@ -1,0 +1,26 @@
+---
+title: ""
+listing:
+  - id: pubs
+    contents: papers/publications.yaml
+    template: assets/papers-list.ejs
+  - id: wp
+    contents: papers/working-papers.yaml
+    template: assets/papers-list.ejs
+  - id: idp
+    contents: papers/interdisc.yaml
+    template: assets/papers-list.ejs
+toc: false
+---
+
+# Publications
+
+::: {#pubs}
+:::
+
+# Working Papers
+
+::: {#wp}
+:::
+
+# Interdisciplinary Projects

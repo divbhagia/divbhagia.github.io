@@ -1,0 +1,9 @@
+- id: reg
+  title: "Understanding the Racial Employment Gap: The Role of Sectoral Shifts"
+  coauthors: ["Carter Bryson"]
+  coauthorLinks: ["https://www.carterbryson.com"]
+  journalName: "Labour Economics"
+  year: "2023"
+  publishedLink: "https://www.sciencedirect.com/science/article/abs/pii/S092753712300088X?via%3Dihub"
+  preprintLink: "/papers/Bhagia_Bryson_REG.pdf"
+  abstract: "Employment outcomes of Black men worsened significantly relative to White men during the second half of the 20th century. We explore the role of broad sectoral shifts in labor demand over this period in explaining this trend. We first quantify changes in local employment and population in response to local labor demand shifts for both groups of workers. We then combine our estimates with a stylized model that incorporates frictional local labor markets and imperfect mobility across markets. Our framework enables us to aggregate local responses while accounting for geographic mobility and regional employment composition. We find that sectoral reallocation can explain around one-fifth of the total exacerbation in the employment-to-population ratio differential between Black and White men over 1970–2010. Out-migration from harder-hit markets, while large, does not mitigate the impact of negative labor demand shifts. We also find that most of the predicted change in the employment differential is due to differential response rather than differential exposure to shifts across two groups."

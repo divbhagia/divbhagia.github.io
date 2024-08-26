@@ -1,0 +1,29 @@
+{
+  "about.qmd": {
+    "about.html": "bd6ace7a"
+  },
+  "index.qmd": {
+    "index.html": "8daf02a2"
+  },
+  "teaching.qmd": {
+    "teaching.html": "331f8502"
+  },
+  "cv.qmd": {
+    "cv.html": "656c93cb"
+  },
+  "research.qmd": {
+    "research.html": "306e6d9d"
+  },
+  "tmp.qmd": {
+    "tmp.html": "b357249d"
+  },
+  "papers/racegap.qmd": {
+    "racegap.html": "429f9e6b"
+  },
+  "papers/durdep.qmd": {
+    "durdep.html": "164b4aed"
+  },
+  "pubs.qmd": {
+    "pubs.html": "7f5d5fc3"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "hash": "0b4ffcb94320e8c4bcdcf63f9de6ff7a",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"My Academic Publications\"\nformat: html\npublications:\n  - title: \"Title of Paper One\"\n    authors: \"Author One, Author Two\"\n    journal: \"Journal Name\"\n    year: 2023\n    url: \"https://linktopaper.com\"\n  - title: \"Title of Paper Two\"\n    authors: \"Author One, Author Three\"\n    journal: \"Another Journal\"\n    year: 2022\n    url: \"https://linktoanotherpaper.com\"\n---\n\n\n# My Publications\n\nHere is a list of my publications:\n\n\n```{html}\n<ul>\n${publications.map(pub => `\n  <li>\n    <strong>${pub.title}</strong> by ${pub.authors}\n    (<a href=\"${pub.url}\">Link</a>)\n    - Published in ${pub.journal}, ${pub.year}\n  </li>\n`).join('')}\n</ul>\n```\n\n",
+    "supporting": [
+      "tmp_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

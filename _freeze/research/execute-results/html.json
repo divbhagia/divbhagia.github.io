@@ -1,0 +1,16 @@
+{
+  "hash": "5317d63d2afd18f2a873a1c89d9ab71c",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: Working Papers\ntoc: false\ninclude-in-header: assets/abstract-button.html\n---\n\n\n\n\n\n\n<!-- Add buttons for links -->\n\n### Publications\n\n- Understanding the Racial Employment Gap: The Role of Sectoral Shifts with Carter Bryson, Labour Economics, 2023. \n\n\n::: {#ba1624ef .cell execution_count=1}\n``` {.python .cell-code}\npublications = [\n    {\"title\": \"The Economics of AI\", \"author\": \"Jane Doe\", \"year\": 2022, \"url\": \"https://example.com/economics-ai\"},\n    {\"title\": \"Understanding Market Trends\", \"author\": \"John Smith\", \"year\": 2021, \"url\": \"https://example.com/market-trends\"}\n]\n\nhtml_output = \"<ul>\"\nfor pub in publications:\n    html_output += f\"<li>\"\n    html_output += f\"<strong><a href='{pub['url']}'>{pub['title']}</a></strong> - \"\n    html_output += f\"{pub['author']} ({pub['year']})\"\n    html_output += \"</li>\"\nhtml_output += \"</ul>\"\n\nfrom IPython.display import display, HTML\ndisplay(HTML(html_output))\n```\n\n::: {.cell-output .cell-output-display}\n```{=html}\n<ul><li><strong><a href='https://example.com/economics-ai'>The Economics of AI</a></strong> - Jane Doe (2022)</li><li><strong><a href='https://example.com/market-trends'>Understanding Market Trends</a></strong> - John Smith (2021)</li></ul>\n```\n:::\n:::\n\n\n\n- Duration Dependence and Heterogeneity: Learning from Early Notice of Layoff  \n\n### Work in Progress\n\n- Firm Organization and Spillovers with Esther Lee \n\n- Discrete Time Mixed Proportional Hazard Model\n\n### Peer-Reviewed Publications (outside of economics)\n\n\n",
+    "supporting": [
+      "research_files"
+    ],
+    "filters": [],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js\" integrity=\"sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==\" crossorigin=\"anonymous\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js\" integrity=\"sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==\" crossorigin=\"anonymous\" data-relocate-top=\"true\"></script>\n<script type=\"application/javascript\">define('jquery', [],function() {return window.jQuery;})</script>\n"
+      ]
+    }
+  }
+}

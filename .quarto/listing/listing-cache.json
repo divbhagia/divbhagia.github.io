@@ -1,0 +1,9 @@
+{
+  "listingMap": {
+    "research.qmd": [
+      "papers/publications.yaml",
+      "papers/working-papers.yaml",
+      "papers/interdisc.yaml"
+    ]
+  }
+}

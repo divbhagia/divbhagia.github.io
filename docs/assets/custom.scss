@@ -1,0 +1,113 @@
+/*-- scss:defaults --*/
+
+// Import Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Sans+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+// Fonts
+$font-family-sans-serif: Lato, Helvetica, sans-serif !default;
+$font-family-monospace: "Fira Mono", monospace !default;
+$headings-font-family: Fira Sans Condensed, Helvetica, sans-serif !default;
+$font-size-base: 1.1rem ;
+
+//  Colors
+$primary: #2b3457 !default;
+$secondary: #fff !default;
+
+// Text color
+$body-color: #000 !default;
+$headings-color: $primary !default;
+
+// Reduce bottom space in quarto listing margin
+.quarto-listing {
+  padding-bottom: 0;
+}
+
+/*------------ scss:rules ------------*/
+
+// Headings font
+.h1 {
+  font-weight: 700;
+  font-size: 2 * $font-size-base;
+}
+h2, h3 {
+  font-weight: 700;
+  font-size: 1.7 * $font-size-base;
+}
+h4 {
+  font-weight: 600;
+  font-size: 1.25 * $font-size-base;
+}
+#quarto-header {
+  //text-transform: uppercase;
+  font-family: $headings-font-family;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+// jolla template for home page
+div.quarto-about-jolla main {
+  border-top: solid 2px $primary;
+  border-bottom: solid 2px $primary;
+  border-radius: 0;
+  padding-top: 20px;
+}
+div.quarto-about-jolla .about-sep {
+  border: 0px;
+}
+
+// Box for listings of papers
+.link-box {
+  border: 1px solid $primary;
+  padding: 2px 6px;
+  display: inline-block;
+  margin-top: 5px;
+  border-radius: 8px;
+  background-color: $secondary; 
+  font-size: 0.9rem;
+  a {
+      text-decoration: none;
+      color: $primary;
+      &:hover {
+          color: $primary;
+      }
+  }
+}
+
+// Special text for papers
+paper-title {
+  font-weight: bold;
+  display: inline;
+  color: $primary;
+}
+
+// Buttons
+button {
+  border: 0px;
+  -webkit-text-fill-color: $primary;
+}
+
+// Abstract text
+.abstract-text {
+  font-size: 0.9rem;
+  line-height: 1.25;
+  padding: 10px; 
+  text-align: justify; 
+}
+
+// Embed CV
+iframe.pdfembed {
+  display: none;
+}
+@media (min-width: 1025px) {
+  iframe.pdfembed {
+    display: block; 
+    border: 3px solid $primary; 
+    width: 100%;
+    // #height: 100%;
+    height: 800px;
+  }
+}
+
