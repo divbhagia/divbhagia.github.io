@@ -33,6 +33,7 @@ format:
     theme: [assets/custom.scss]
     toc: true
     link-external-newwindow: false
+    include-in-header: assets/google-verify.html
 
 
 
