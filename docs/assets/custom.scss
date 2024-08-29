@@ -22,7 +22,7 @@ $headings-color: $primary !default;
 
 // Reduce bottom space in quarto listing margin
 .quarto-listing {
-  padding-bottom: 0;
+  padding-bottom: 0em !important;
 }
 
 /*------------ scss:rules ------------*/

@@ -23,4 +23,7 @@ toc: false
 ::: {#wp}
 :::
 
-# Interdisciplinary Projects
+# Interdisciplinary Papers
+
+::: {#idp}
+:::
