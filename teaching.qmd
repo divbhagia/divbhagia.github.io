@@ -8,13 +8,13 @@ toc: false
 - **Econ 340: Economics Research Methods**
  
     - Fall 2022, Spring 2023, Fall 2023, Spring 2024, Fall 2024
-    - Course website: [https://divbhagia.github.io/econ340/](https://divbhagia.github.io/econ340/)
+    - Course website: [dbhagia.com/econ340/](https://www.dbhagia.com/econ340/)
   
 - **Econ 441: Introduction to Mathematical Economics**
   
     - Fall 2022, Spring 2023, Fall 2023, Spring 2024, Fall 2024
-    - Course website: [https://divbhagia.github.io/econ441/](https://divbhagia.github.io/econ441/)
-
+    - Course website: [dbhagia.com/econ441/](https://www.dbhagia.com/econ441/)
+  
 ## Boston College
 
 - R Bootcamp for incoming Social Work PhD students (Summer 2021)
