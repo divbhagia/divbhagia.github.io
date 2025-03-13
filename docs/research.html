@@ -5001,6 +5001,34 @@ vertical-align: -.125em;
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-wip .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-id','listing-title','listing-coauthors','listing-coauthorLinks','listing-abstract',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-id","listing-title","listing-coauthors","listing-coauthorLinks","listing-abstract"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-wip'] = new List('listing-wip', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-idp .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -5222,32 +5250,27 @@ window.Quarto = {
 
 
 
-<section id="publications" class="level1">
-<h1>Publications</h1>
-<div id="listing-pubs" class="quarto-listing quarto-listing-container-custom">
+<section id="works-in-progress" class="level1">
+<h1>Works in Progress</h1>
+<div id="listing-wip" class="quarto-listing quarto-listing-container-custom">
 <ul>
     
       <li>
 
         <!-- Title -->
-        <paper-title>Understanding the Racial Employment Gap: The Role of Sectoral Shifts</paper-title>
+        <paper-title>Labor Market Concentration and Wealth Inequality</paper-title>
         
         <!-- Coauthor Names -->
         
           
             with 
             
-              <a href="https://www.carterbryson.com">Carter Bryson</a>
+              <a href="https://mayecon.com/">Thomas J. May</a>
             
           
         
 
         <!-- Journal Name and Date -->
-        
-          ,  <em>Labour Economics</em>
-          
-          ,  2023
-          
         
 
         <!-- Status -->
@@ -5261,16 +5284,8 @@ window.Quarto = {
 
         <!-- Preprint Link -->
         
-        <div class="link-box">
-            <a href="./papers/Bhagia_Bryson_REG.pdf">Preprint</a>
-        </div>
-        
 
         <!-- Published Version -->
-        
-        <div class="link-box">
-            <a href="https://www.sciencedirect.com/science/article/abs/pii/S092753712300088X?via%3Dihub">Published Version</a>
-        </div>
         
 
         <!-- Current Draft -->
@@ -5284,9 +5299,64 @@ window.Quarto = {
 
         <!-- Abstract Button and Text Section -->
         
-        <button class="link-box" onclick="toggleAbstract(&#39;reg&#39;)"> Abstract</button><button>
-        <div id="abstract-reg" class="abstract-text" style="display: none;">
-            Employment outcomes of Black men worsened significantly relative to White men during the second half of the 20th century. We explore the role of broad sectoral shifts in labor demand over this period in explaining this trend. We first quantify changes in local employment and population in response to local labor demand shifts for both groups of workers. We then combine our estimates with a stylized model that incorporates frictional local labor markets and imperfect mobility across markets. Our framework enables us to aggregate local responses while accounting for geographic mobility and regional employment composition. We find that sectoral reallocation can explain around one-fifth of the total exacerbation in the employment-to-population ratio differential between Black and White men over 1970–2010. Out-migration from harder-hit markets, while large, does not mitigate the impact of negative labor demand shifts. We also find that most of the predicted change in the employment differential is due to differential response rather than differential exposure to shifts across two groups.
+        <button class="link-box" onclick="toggleAbstract(&#39;monopsony_ineq&#39;)"> Abstract</button><button>
+        <div id="abstract-monopsony_ineq" class="abstract-text" style="display: none;">
+            In this paper, we develop a rich quantitative model to study the interaction between labor market concentration and wealth inequality. In our model, concentration affects wealth inequality through three channels. First, large firms pay lower wages while generating profits that go to wealthier shareholders. Second, borrowing-constrained workers cannot afford unemployment, which weakens their bargaining power and lowers their wages---an effect that is stronger in more concentrated markets where unemployment risk is higher. Third, there is lower job mobility in concentrated markets, leaving low-asset workers stuck in low-wage jobs. We utilize microdata and calibrate the model to match trends in U.S. labor markets to quantify the role of increasing concentration in rising wealth inequality over the last three decades. Finally, using our model as a laboratory, we study the optimal mix of minimum wage (a tax borne by employers) and social welfare (a tax on society as a whole). Our framework is well suited for this analysis, as it highlights how a worker’s ability to insure against risk influences the impact of employer market power.
+        </div>
+        
+
+        <!-- Add break -->
+        <br><br>
+
+      </button></li>
+    
+      <li>
+
+        <!-- Title -->
+        <paper-title>Firm Organization and Spillovers</paper-title>
+        
+        <!-- Coauthor Names -->
+        
+          
+            with 
+            
+              Esther Lee
+            
+          
+        
+
+        <!-- Journal Name and Date -->
+        
+
+        <!-- Status -->
+        
+
+        <!-- Other text -->
+        
+
+        <!-- Add break -->
+        <br>
+
+        <!-- Preprint Link -->
+        
+
+        <!-- Published Version -->
+        
+
+        <!-- Current Draft -->
+        
+
+        <!-- arXiv Link -->
+        
+
+        <!-- Data & Code -->
+        
+
+        <!-- Abstract Button and Text Section -->
+        
+        <button class="link-box" onclick="toggleAbstract(&#39;firm_learn&#39;)"> Abstract</button><button>
+        <div id="abstract-firm_learn" class="abstract-text" style="display: none;">
+            This paper studies whether the organizational decisions of new entrants in a market are influenced by the hierarchical structure of their incumbent peers.  Using matched employer-employee data from Brazil, we classify establishments into one to four-layer entities and examine how a new entrant’s decision to add an organizational layer varies with the average number of layers of other establishments in their industry and location. To address the potential endogeneity of peers’ layers, we construct an instrument based on layers of other establishments in peers’ firms that operate in different markets. We find that new entrants are twice as likely to add a layer within five years if their average peer has one more layer at the time of entry. Our results suggest that organizational structure spillovers can provide a new source of agglomeration advantages. We also find that the influence of peers is stronger in industries that are more similar. Additionally, we show that new entrants with high-layer peers hire more workers from within the market in the newly created layers, indicating personnel exchanges as a mechanism for organizational spillovers.
         </div>
         
 
@@ -5311,8 +5381,8 @@ No matching items
 </div>
 </div>
 </section>
-<section id="working-papers" class="level1">
-<h1>Working Papers</h1>
+<section id="under-review" class="level1">
+<h1>Under Review</h1>
 <div id="listing-wp" class="quarto-listing quarto-listing-container-custom">
 <ul>
     
@@ -5404,6 +5474,103 @@ No matching items
 
         <!-- Current Draft -->
         
+        <div class="link-box">
+            <a href="./papers/DiscreteMPH_Bhagia.pdf" target="_blank">Current Draft</a>
+        </div>
+        
+
+        <!-- arXiv Link -->
+        
+
+        <!-- Data & Code -->
+        
+        <div class="link-box">
+            <a href="https://github.com/divbhagia/DiscreteMPH">Data &amp; Code</a>
+        </div>
+        
+
+        <!-- Abstract Button and Text Section -->
+        
+        <button class="link-box" onclick="toggleAbstract(&#39;dtmph&#39;)"> Abstract</button><button>
+        <div id="abstract-dtmph" class="abstract-text" style="display: none;">
+            This paper provides a constructive proof of identification for the discrete-time variant of the Mixed Proportional Hazard model. The identification result is used to develop a fully nonparametric estimator based on the Generalized Method of Moments, which converges at a root-n rate and is asymptotically normally distributed. Numerical simulations demonstrate that the estimator also performs well in finite samples.
+        </div>
+        
+
+        <!-- Add break -->
+        <br><br>
+
+      </button></li>
+    
+  </ul>
+<script>
+function toggleAbstract(id) {
+    var abstractDiv = document.getElementById('abstract-' + id);
+    if (abstractDiv.style.display === 'none') {
+        abstractDiv.style.display = 'block';
+    } else {
+        abstractDiv.style.display = 'none';
+    }
+}
+</script>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="publications" class="level1">
+<h1>Publications</h1>
+<div id="listing-pubs" class="quarto-listing quarto-listing-container-custom">
+<ul>
+    
+      <li>
+
+        <!-- Title -->
+        <paper-title>Understanding the Racial Employment Gap: The Role of Sectoral Shifts</paper-title>
+        
+        <!-- Coauthor Names -->
+        
+          
+            with 
+            
+              <a href="https://www.carterbryson.com">Carter Bryson</a>
+            
+          
+        
+
+        <!-- Journal Name and Date -->
+        
+          ,  <em>Labour Economics</em>
+          
+          ,  2023
+          
+        
+
+        <!-- Status -->
+        
+
+        <!-- Other text -->
+        
+
+        <!-- Add break -->
+        <br>
+
+        <!-- Preprint Link -->
+        
+        <div class="link-box">
+            <a href="./papers/Bhagia_Bryson_REG.pdf">Preprint</a>
+        </div>
+        
+
+        <!-- Published Version -->
+        
+        <div class="link-box">
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S092753712300088X?via%3Dihub">Published Version</a>
+        </div>
+        
+
+        <!-- Current Draft -->
+        
 
         <!-- arXiv Link -->
         
@@ -5413,9 +5580,9 @@ No matching items
 
         <!-- Abstract Button and Text Section -->
         
-        <button class="link-box" onclick="toggleAbstract(&#39;dtmph&#39;)"> Abstract</button><button>
-        <div id="abstract-dtmph" class="abstract-text" style="display: none;">
-            This paper provides a constructive proof of identification for the discrete-time variant of the Mixed Proportional Hazard model. The identification result is used to develop a fully nonparametric estimator based on the Generalized Method of Moments, which converges at a root-n rate and is asymptotically normally distributed. Numerical simulations demonstrate that the estimator also performs well in finite samples.
+        <button class="link-box" onclick="toggleAbstract(&#39;reg&#39;)"> Abstract</button><button>
+        <div id="abstract-reg" class="abstract-text" style="display: none;">
+            Employment outcomes of Black men worsened significantly relative to White men during the second half of the 20th century. We explore the role of broad sectoral shifts in labor demand over this period in explaining this trend. We first quantify changes in local employment and population in response to local labor demand shifts for both groups of workers. We then combine our estimates with a stylized model that incorporates frictional local labor markets and imperfect mobility across markets. Our framework enables us to aggregate local responses while accounting for geographic mobility and regional employment composition. We find that sectoral reallocation can explain around one-fifth of the total exacerbation in the employment-to-population ratio differential between Black and White men over 1970–2010. Out-migration from harder-hit markets, while large, does not mitigate the impact of negative labor demand shifts. We also find that most of the predicted change in the employment differential is due to differential response rather than differential exposure to shifts across two groups.
         </div>
         
 

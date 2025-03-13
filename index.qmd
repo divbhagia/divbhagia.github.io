@@ -14,9 +14,9 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/divbhagia
-    - icon: twitter
-      text: Twitter
-      href: https://x.com/BhagiaDiv
+    # - icon: twitter
+    #   text: Twitter
+    #   href: https://x.com/BhagiaDiv
 format:
   html:
     link-external-newwindow: true

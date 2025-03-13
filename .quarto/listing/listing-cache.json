@@ -3,6 +3,7 @@
     "research.qmd": [
       "papers/publications.yaml",
       "papers/working-papers.yaml",
+      "papers/works-in-progress.yaml",
       "papers/interdisc.yaml"
     ]
   }

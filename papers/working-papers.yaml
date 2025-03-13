@@ -7,4 +7,7 @@
 
 - id: dtmph
   title: "Discrete Time Mixed Proportional Hazard Model"
+  draft: "/papers/DiscreteMPH_Bhagia.pdf"
+  replpack: "https://github.com/divbhagia/DiscreteMPH"
   abstract: "This paper provides a constructive proof of identification for the discrete-time variant of the Mixed Proportional Hazard model. The identification result is used to develop a fully nonparametric estimator based on the Generalized Method of Moments, which converges at a root-n rate and is asymptotically normally distributed. Numerical simulations demonstrate that the estimator also performs well in finite samples."
+
