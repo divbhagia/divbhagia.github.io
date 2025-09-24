@@ -1,5 +1,6 @@
 - id: dur_dep
   title: "Duration Dependence and Heterogeneity: Learning from Early Notice of Layoff"
+  status: "R&R at Journal of Applied Econometrics"
   draft: "/papers/notice_bhagia.pdf"
   arxiv: "https://arxiv.org/abs/2305.17344"
   replpack: "https://github.com/divbhagia/advance-notice"
