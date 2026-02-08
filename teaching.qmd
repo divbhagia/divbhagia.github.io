@@ -5,10 +5,10 @@ toc: false
 
 ## California State University – Fullerton
 
-- **Econ 501: Advanced Microeconomics**
+- **Econ 502: Advanced Microeconomics**
   
     - Fall 2026
-    - Course website: [dbhagia.com/econ501/](https://www.dbhagia.com/econ501/)
+    - Course website: [dbhagia.com/econ502/](https://www.dbhagia.com/econ502/)
 
 - **Econ 340: Economics Research Methods**
  
