@@ -8,17 +8,17 @@ toc: false
 - **Econ 502: Advanced Microeconomics**
   
     - Fall 2026
-    - Course website: [dbhagia.com/econ502/](https://www.dbhagia.com/econ502/)
+    - Course website: [dbhagia.com/econ502/](https://dbhagia.com/econ502/)
 
 - **Econ 340: Economics Research Methods**
  
     - Fall 2022, Spring 2023, Fall 2023, Spring 2024, Fall 2024
-    - Course website: [dbhagia.com/econ340/](https://www.dbhagia.com/econ340/)
+    - Course website: [dbhagia.com/econ340/](https://dbhagia.com/econ340/)
   
-- **Econ 441: Introduction to Mathematical Economics**
+- **Econ 441: Introduction to Mathematical Economi
   
     - Fall 2022, Spring 2023, Fall 2023, Spring 2024, Fall 2024, Spring 2025
-    - Course website: [dbhagia.com/econ441/](https://www.dbhagia.com/econ441/)
+    - Course website: [dbhagia.com/econ441/](https://dbhagia.com/econ441/)
   
 ## Boston College
 
