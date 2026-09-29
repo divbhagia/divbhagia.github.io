@@ -7,21 +7,13 @@ listing:
   - id: wp
     contents: papers/working-papers.yaml
     template: assets/papers-list.ejs
-  - id: wip
-    contents: papers/works-in-progress.yaml
-    template: assets/papers-list.ejs
   - id: idp
     contents: papers/interdisc.yaml
     template: assets/papers-list.ejs
 toc: false
 ---
 
-# Works in Progress
-
-::: {#wip}
-:::
-
-# Under Review
+# Working Papers
 
 ::: {#wp}
 :::

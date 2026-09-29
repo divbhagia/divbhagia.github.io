@@ -1,26 +1,45 @@
 ---
 title: "Div Bhagia"
 subtitle: "Assistant Professor of Economics, California State University, Fullerton"
-image: assets/headshot.png 
-toc: false 
-about: 
-  template: jolla 
+image: assets/headshot.jpg
+toc: false
+about:
+  template: trestles
   image-shape: round
-  image-width: 30%
+  image-width: 11em
   links:
     - icon: google
-      text: Google Scholar
+      text: Scholar
       href: https://scholar.google.com/citations?user=g6QJCFkAAAAJ
     - icon: github
       text: GitHub
       href: https://github.com/divbhagia
+    - icon: file-earmark-text
+      text: CV
+      href: assets/bhagia_CV.pdf
 format:
   html:
     link-external-newwindow: true
 ---
 
+```{=html}
+<img class="home-banner" src="assets/banner.jpg" alt="Cholla cactus garden and mountains in Joshua Tree National Park">
+```
+
+::: {.greeting}
+Hi, I'm Div!
+:::
+
 I am an Assistant Professor of Economics at the College of Business and Economics, California State University, Fullerton. I received my Ph.D. in Economics from Boston College in 2022.
 
-My research interests include labor economics, applied econometrics, and economic geography. You can find links to my published and working papers on the research page. Additionally, links to all the materials from the classes I teach at CSUF are available on the teaching page.
+::: {.fields-label}
+Research fields
+:::
 
-You can reach me at [dbhagia17@gmail.com](mailto:dbhagia17@gmail.com). 
+::: {.interest-tags}
+[Labor Economics]{} [Applied Econometrics]{}
+:::
+
+You can find my published and working papers on the [research](research.qmd) page. Materials from the classes I teach at CSUF are on the [teaching](teaching.qmd) page.
+
+I'm always happy to hear from fellow researchers and students. Reach me at [dbhagia@fullerton.edu](mailto:dbhagia@fullerton.edu) or [dbhagia17@gmail.com](mailto:dbhagia17@gmail.com).
